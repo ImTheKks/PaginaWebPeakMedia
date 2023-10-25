@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #20284d;
+  overflow-x: hidden;
+}
+@font-face {
+  font-family: yorkieRegular;
+  src: url(/fonts/YorkieDEMO-Regular.otf);
+}
+@font-face {
+  font-family: yorkieLight;
+  src: url(/fonts/YorkieDEMO-Light.otf);
+}
+@font-face {
+  font-family: coinage;
+  src: url(/fonts/CoinageCapsKrugerGray.ttf);
+}
+.nav {
+  background: #20284d;
+  position: sticky;
+}
+.meme {
+  background: #20284d;
+  margin: 0;
+}
+/*todo respecto al boton de abrir el menú*/
+.menu {
+  background: #20284d;
+  bottom: 25px;
+  box-shadow: 0 0 0 0 #20284d, 0 0 0 0 #20284d;
+  cursor: pointer;
+  height: 60px;
+  right: 60px;
+  width: 208vh;
+  transition: box-shadow 1.1s cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 2;
+}
+/*lineas del boton para abrir el menú*/
+.hamburger {
+  position: relative;
+  top: 29px;
+  left: 15px;
+  width: 30px;
+  height: 3px;
+  background: white;
+  display: block;
+  transform-origin: center;
+  transition: 0.5s ease-in-out;
+}
+.hamburger::after,
+.hamburger::before {
+  background: white;
+  content: "";
+  display: block;
+  transition: 0.5s ease-in-out;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.hamburger::before {
+  top: -10px;
+}
+.hamburger::after {
+  bottom: -10px;
+}
+input {
+  display: none;
+}
+/*menú abierto*/
+input:checked ~ label .menu {
+  box-shadow: 0 0 0 1vw #20284d, 0 0 0 92vh #20284d, 0 0 0 130vh white;
+  background-image: url(/images/logofo.png);
+}
+input:checked ~ label .hamburger {
+  transform: rotate(45deg);
+}
+input:checked ~ label .hamburger::after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+input:checked ~ label .hamburger::before {
+  transform: rotate(90deg);
+  top: 0;
+}
+input:checked ~ ul {
+  opacity: 1;
+}
+ul {
+  position: absolute;
+  transform: translate();
+  list-style: none;
+  font-size: 45px;
+  opacity: 0;
+  transition: 0.25s, 0.1s cubic-bezier(0, 1.07, 0, 1.02);
+  z-index: 2;
+}
+li a {
+  color: rgb(184, 184, 184);
+  transform: all 300ms;
+  position: relative;
+}
+li a::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 0;
+  height: 10px;
+  background-color: white;
+  transition: all 600ms cubic-bezier(1, 0, 0, 1);
+}
+li a:hover::before {
+  width: 110%;
+}
+li a:hover {
+  font-size: 3rem;
+  color: white;
+}
+a {
+  color: #00cec9;
+  display: block;
+  margin-bottom: 1em;
+  text-decoration: none;
+  text-align: left;
+}
+.bodyall {
+}
+.cajal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.peak {
+  color: white;
+  font-size: 2.5rem;
+  font-family: yorkieRegular;
+}
+.montaña{
+  position: fixed;
+  z-index: -1;
+}
+.desa {
+  width: 100%;
+  height: 100%;
+}
+.titu {
+  margin-top: 5%;
+  color: white;
+  font-family: yorkieRegular;
+}
+.titu1 {
+  font-size: 6rem;
+  margin-left: 4%;
+}
+.titu2 {
+  font-size: 7.5rem;
+  margin-left: 22%;
+}
+.descri {
+  color: white;
+  font-size: 1.3rem;
+  margin: 15% 0% 0 25%;
+}
+.img1 {
+  background-color: white;
+  height: 340px;
+  width: 600px;
+}
+.img2 {
+  background-color: white;
+  height: 350px;
+  width: 600px;
+  margin-left: 20%;
+  margin-top: -15%;
+}
+
+
