@@ -149,39 +149,60 @@ a {
   position: fixed;
   z-index: -1;
 }
-.desa {
-  width: 100%;
-  height: 100%;
+.desa{
+  margin-bottom: 7%;
 }
 .titu {
-  margin-top: 5%;
+  margin-top: 3%;
   color: white;
   font-family: yorkieRegular;
 }
 .titu1 {
-  font-size: 6rem;
+  font-size: 5.5rem;
   margin-left: 4%;
 }
 .titu2 {
-  font-size: 7.5rem;
-  margin-left: 22%;
+  font-size: 7rem;
+  margin-left: 28%;
 }
 .descri {
   color: white;
-  font-size: 1.3rem;
-  margin: 15% 0% 0 25%;
+  font-size: 1.1rem;
+  margin: 10% 0% 0 10%;
+}
+.ejem{
+  margin-top: -3%;
 }
 .img1 {
   background-color: white;
-  height: 340px;
-  width: 600px;
+  height: 250px;
+  width: 450px;
 }
 .img2 {
   background-color: white;
-  height: 350px;
-  width: 600px;
+  height: 250px;
+  width: 450px;
   margin-left: 20%;
   margin-top: -15%;
 }
+
+.footer {
+  background-color: #20284d;
+}
+.logofo {
+  display: flex;
+  justify-content: center;
+  margin-top: 17vh;
+  margin-bottom: 17vh;
+}
+.botoncon {
+  display: flex;
+  justify-content: center;
+}
+.derechos {
+  display: flex;
+  align-items: end;
+}
+
 
 

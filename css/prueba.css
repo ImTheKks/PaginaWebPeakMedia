@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden; /* Deshabilita el desplazamiento vertical y horizontal predeterminado */
+}
+
+#main-content {
+    width: 200%; /* Esto debe ser un valor mayor que 100% para habilitar el desplazamiento */
+    white-space: nowrap;
+}

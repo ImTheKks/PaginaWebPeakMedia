@@ -151,6 +151,7 @@ a {
   font-family: yorkieRegular;
 }
 .desa {
+  margin-bottom: 3%;
   width: 100%;
   height: 100%;
 }
@@ -160,7 +161,7 @@ a {
   font-family: yorkieRegular;
 }
 .titu1 {
-  font-size: 8rem;
+  font-size: 6rem;
   margin-left: 4%;
 }
 .titu2 {
@@ -169,18 +170,18 @@ a {
 }
 .descri {
   color: #20284d;
-  font-size: 1.3rem;
-  margin: 15% 0% 0 10%;
+  font-size: 1.2rem;
+  margin: 5% 0% 0 10%;
 }
 .ejem{
+  margin-top: -4%;
   margin-left: 3%;
-  margin-top: -2%;
 }
 .img1 {
   background-color: #20284d;
-  height: 300px;
-  width: 850px;
-  margin-bottom: 7%;
+  height: 200px;
+  width: 600px;
+  margin-bottom: 5%;
 }
 
 

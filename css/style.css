@@ -74,6 +74,7 @@ input {
 /*menú abierto*/
 input:checked ~ label .menu {
   box-shadow: 0 0 0 1vw #20284d, 0 0 0 92vh #20284d, 0 0 0 130vh white;
+  background-image: url(/images/logofo.png);
 }
 input:checked ~ label .hamburger {
   transform: rotate(45deg);
@@ -142,6 +143,8 @@ a {
   font-size: 2.5rem;
   font-family: yorkieRegular;
 }
+.bodyall{
+}
 .nosotros {
   margin-top: 5%;
 }
@@ -154,6 +157,7 @@ a {
 .linea {
   height: 1%;
   background-color: #20284d;
+  border-radius: 10px;
 }
 .titu1 {
   font-family: yorkieRegular;
@@ -167,7 +171,7 @@ a {
   margin-left: 25vh;
 }
 .descripcion {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 8% 10% 8% 10%;
 }
 .fotos {
@@ -209,3 +213,4 @@ a {
   padding: 20px;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
+}
