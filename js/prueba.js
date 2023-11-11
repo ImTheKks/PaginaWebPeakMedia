@@ -1,9 +1,25 @@
-const mainContent = document.getElementById("main-content");
+var app = function () {
+    var body = void 0;
+    var menu = void 0;
+    var menuItems = void 0;
 
-window.addEventListener("wheel", (e) => {
-    // Verifica si se está desplazando horizontalmente
-    if (e.deltaY === 0) {
-        // Ajusta la posición horizontal de la página según la dirección de la rueda
-        mainContent.scrollLeft += e.deltaX;
-    }
-});
+    var init = function init() {
+        body = document.querySelector('body');
+        menu = document.querySelector('.menu-icon');
+        menuItems = document.querySelectorAll('.nav-list-item');
+
+        applyListeners();
+    };
+
+    var applyListeners = function applyListeners() {
+        menu.addEventListener('click', function () {
+            return toggleClass(body, 'nav-active');
+        });
+    };
+
+    var toggleClass = function toggleClass(element, stringClass) {
+        if (element.classList.contains(stringClass)) element.classList.remove(stringClass); else element.classList.add(stringClass);
+    };
+
+    init();
+}();
