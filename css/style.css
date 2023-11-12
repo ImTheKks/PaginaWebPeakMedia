@@ -309,7 +309,7 @@ section img{
   justify-content: center;
 }
 .bannerxd{
-  margin-top: -5%;
+  margin-top: 2%;
   height: 50vh;
   display: flex;
   justify-content: center;
@@ -318,8 +318,8 @@ section img{
 }
 
 .carta-int{
- 
-  
+  display: flex;
+  justify-content: center;
 }
 
 .banner_uru{
