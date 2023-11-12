@@ -288,7 +288,7 @@ section img{
   margin-left: 10vh;
 }
 .titu2 {
-  margin-top: 5&;
+  margin-top: 5%;
   margin-bottom: 5vh;
   font-family: yorkieRegular;
   font-size: 8rem;
@@ -316,6 +316,12 @@ section img{
   align-items: center;
   
 }
+
+.carta-int{
+ 
+  
+}
+
 .banner_uru{
 
 }
