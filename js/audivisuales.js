@@ -1,23 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
 const cursor = document.querySelector(".cursor");
 document.addEventListener("mousemove", (e) => {
     cursor.style.left = e.pageX + "px";
     cursor.style.top = e.pageY + "px";
 })
-
-
-
-
 
 
 
@@ -49,26 +34,3 @@ var app = function () {
 
     init();
 }();
-
-
-
-
-
-let div = document.getElementById('div')
-
-let arbol = document.getElementById('arbol')
-let agua = document.getElementById('agua')
-let m1 = document.getElementById('m1')
-let m2 = document.getElementById('m2')
-let m3 = document.getElementById('m3')
-
-window.addEventListener('scroll',function(){
-    let value = this.window.scrollY;
-
-    arbol.style.marginTop = value * -0 + 'px'
-    agua.style.top = value * -0 + 'px'
-    m1.style.top = value * -0 + 'px'
-    m2.style.top = value * 0 + 'px'
-    m3.style.top = value * 0.5 + 'px'
-})
-
