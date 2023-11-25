@@ -3,33 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/prueba.css">
-    <title>Desplazamiento Horizontal</title>
+    <title>Mostrar/Ocultar Contenido</title>
+    <style>
+        .contenido {
+            display: none;
+        }
+    </style>
 </head>
 <body>
 
-    <body>
-        <div class="navbar navbar-default navbar-fixed-top">
-            <div class="menu-icon">
-                <span class="menu-icon__line menu-icon__line-left"></span>
-                <span class="menu-icon__line"></span>
-                <span class="menu-icon__line menu-icon__line-right"></span>
-            </div>
-        </div>
-        <div class="nav">
-            <div class="nav__content">
-                <ul class="nav__list">
-                    <li class="nav__list-item">Home</li>
-                    <li class="nav__list-item">About</li>
-                    <li class="nav__list-item">Projects</li>
-                    <li class="nav__list-item">Contact</li>
-                </ul>
-            </div>
-        </div>
-   
-    </body>
+<button onclick="mostrarContenido('contenido1')">Mostrar Contenido 1</button>
+<button onclick="mostrarContenido('contenido2')">Mostrar Contenido 2</button>
+<button onclick="mostrarContenido('contenido3')">Mostrar Contenido 3</button>
 
+<div id="contenido1" class="contenido">
+    <h2>Contenido 1</h2>
+    <p>Este es el primer contenido.</p>
+</div>
 
-    <script src="js/prueba.js"></script>
+<div id="contenido2" class="contenido">
+    <h2>Contenido 2</h2>
+    <p>Este es el segundo contenido.</p>
+</div>
+
+<div id="contenido3" class="contenido">
+    <h2>Contenido 3</h2>
+    <p>Este es el tercer contenido.</p>
+</div>
+
+<script>
+    function mostrarContenido(id) {
+        // Ocultar todos los contenidos
+        var contenidos = document.getElementsByClassName('contenido');
+        for (var i = 0; i < contenidos.length; i++) {
+            contenidos[i].style.display = 'none';
+        }
+
+        // Mostrar el contenido deseado
+        var contenidoMostrar = document.getElementById(id);
+        if (contenidoMostrar) {
+            contenidoMostrar.style.display = 'block';
+        }
+    }
+</script>
+
 </body>
 </html>
