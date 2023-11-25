@@ -693,7 +693,7 @@ section img{
 .titu2 {
   margin-bottom: 5vh;
   font-family: yorkieRegular;
-  font-size: 9rem;
+  font-size: 7rem;
   margin-left: 25vh;
 }
 .descripcion {
@@ -903,6 +903,18 @@ align-items: center;
 .video-somos{
   display: flex;
   justify-content: center;
+}
+
+
+.banner-parallax{
+  margin-top: 4%;
+  background: url(../images/banner.png);
+  width: 100%;
+  height: 50vh;
+
+  background-position: bottom center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 

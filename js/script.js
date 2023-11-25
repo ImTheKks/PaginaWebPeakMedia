@@ -72,3 +72,10 @@ window.addEventListener('scroll',function(){
     m3.style.top = value * 0.5 + 'px'
 })
 
+
+
+var touch = Modernizr.touch;
+$('.img-holder').imageScroll({
+  imageAttribute: (touch === true) ? 'image-mobile' : 'image',
+  touch: touch
+});
