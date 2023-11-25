@@ -786,11 +786,16 @@ align-items: center;
 
 /* Cards integrantes */
 
+.carta-int{
 
+  display: flex;
+  justify-content: center;
+}
 
 .card-inte {
+  margin-left: 10%;
   display: flex;
-  justify-content: ;
+  justify-content: center;
   position: relative;
   width: 80%;
   transition: all .3s ease;
@@ -854,12 +859,13 @@ align-items: center;
   justify-content: center;
 }
 .caja-card{
-  background-color:;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .info-card{
   display: flex;
   justify-content: center;
-  flex-direction: column;
 }
 .conoce{
   background-color: ;
@@ -915,7 +921,38 @@ align-items: center;
 
 
 @media screen and (min-width: 10px) and (max-width:576px) {
+  .cursor{
+    display: none;
+  }
+  
   .boton-redes{
     display: none;
   }
+  .titu1 {
+    font-family: yorkieRegular;
+    font-size: 3rem;
+    margin-left: 2vh;
+    margin-bottom: -2vh;
+  }
+  .titu2 {
+    margin-bottom: 5vh;
+    font-family: yorkieRegular;
+    font-size: 5rem;
+    margin-left: 3vh;
+  }
+  .titu-inte{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: yorkieRegular;
+    color: #20284d;
+    font-size: 4rem;
+  }
+  .titu-spot{font-family: yorkieRegular;
+    font-size: 4rem;
+    color: #20284d;
+    text-align: center;
+  }
 }
+    
