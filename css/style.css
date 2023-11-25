@@ -901,3 +901,21 @@ align-items: center;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 10px) and (max-width:576px) {
+  .boton-redes{
+    display: none;
+  }
+}
