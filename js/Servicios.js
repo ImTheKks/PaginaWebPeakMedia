@@ -1,3 +1,14 @@
+window.onload = function(){
+    var contenedor = document.getElementById('contenedor_carga');
+
+    contenedor.style.visibility = 'hidden'
+    contenedor.style.opacity = '0';
+}
+
+
+
+
+
 const cursor = document.querySelector(".cursor");
 document.addEventListener("mousemove", (e) => {
     cursor.style.left = e.pageX + "px";
