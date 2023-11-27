@@ -149,21 +149,17 @@ var nav = document.querySelector('nav');
 
 
 
-
-        let botonmodal4 = document.getElementById('botonmodal4');
-        let vmodal4 = document.getElementById('vmodal4');
-        let ocultobtn9 = document.getElementById('ocultobtn9');
-        
-        botonmodal4.addEventListener('click', toggleH10);
-        
-        function toggleH10() {
-            vmodal4.classList.add('vmodal-show4');
-        
-            ocultobtn9.addEventListener('click', toggleH11);
-        }
-        
-            function toggleH11(){
-                vmodal4.classList.remove('vmodal-show4');
-        
-        }
+        function mostrarContenido(id) {
+          // Ocultar todos los contenidos
+          var contenidos = document.getElementsByClassName('contenido');
+          for (var i = 0; i < contenidos.length; i++) {
+              contenidos[i].style.display = 'none';
+          }
+  
+          // Mostrar el contenido deseado
+          var contenidoMostrar = document.getElementById(id);
+          if (contenidoMostrar) {
+              contenidoMostrar.style.display = 'block';
+          }
+      }
        

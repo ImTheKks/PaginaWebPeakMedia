@@ -37,3 +37,16 @@
   from { transform: rotate(0deg);}
   to {transform: rotate(360deg);}
 }
+
+.card{
+  border-radius: 20px;
+  margin-left: 20px;
+  background-color: #fff;
+  flex: 1;
+  transition: .3s all ease;
+}
+
+.card:hover{
+  flex: 2;
+  background-color: rgb(207, 207, 207);
+}
