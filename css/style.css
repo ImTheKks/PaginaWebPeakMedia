@@ -896,8 +896,7 @@ align-items: center;
 
 
 .contiene-todo{
-  display: flex;
-  justify-content: center;
+  
 }
 .caja-card{
   display: flex;
@@ -908,6 +907,11 @@ align-items: center;
   display: flex;
   justify-content: center;
 }
+
+.foto{
+ 
+}
+
 .conoce{
   background-color: ;
   font-family: Arial, Helvetica, sans-serif;
@@ -988,10 +992,10 @@ align-items: center;
     margin-bottom: -2vh;
   }
   .titu2 {
-    margin-left: 2vh;
+    margin-left: vh;
     margin-bottom: 5vh;
     font-family: yorkieRegular;
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
   .titu-inte{
     margin-top: 5%;
@@ -1001,6 +1005,9 @@ align-items: center;
     font-family: yorkieRegular;
     color: #20284d;
     font-size: 4rem;
+  }
+  .contiene-todo{
+    margin-bottom: 30%;
   }
   .titu-spot{font-family: yorkieRegular;
     font-size: 4rem;
