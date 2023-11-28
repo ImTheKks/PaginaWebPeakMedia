@@ -7,7 +7,7 @@
 
 body {
   
-  background-color: #778FAE;
+
   
   cursor: none;
 }
@@ -453,9 +453,7 @@ body.nav-active .nav__list-item:nth-child(4) {
 
 
 .bodyall{
-  background: rgb(32,40,77);
-background: linear-gradient(180deg, rgba(32,40,77,1) 0%, rgba(119,143,174,1) 100%, rgba(119,143,174,1) 100%);
-  background-color: #778FAE;
+  
 }
 .portafolio{
   margin-top: 1%;
@@ -464,7 +462,7 @@ background: linear-gradient(180deg, rgba(32,40,77,1) 0%, rgba(119,143,174,1) 100
 .caja-titu {
 }
 .porta-titu {
-  color: white;
+  color: #20284d;
   font-family: yorkieRegular;
   font-size: 2.3rem;
   margin: 5% 0 0 10%;
@@ -476,7 +474,7 @@ background: linear-gradient(180deg, rgba(32,40,77,1) 0%, rgba(119,143,174,1) 100
 
 .linea {
   height: 4px;
-  background-color: white;
+  background-color: #20284d;
   border-radius: 10px;
   margin: 2% 0 0 5.5%;
   
@@ -534,12 +532,15 @@ background: linear-gradient(180deg, rgba(32,40,77,1) 0%, rgba(119,143,174,1) 100
 .contenedor-botones{
   cursor: none;
   z-index: 10;
-  background-color: ;
+
   margin-top: 3%;
   display: flex;
   justify-content: center;
-  justify-content: space-around;
+
   border-radius: 0px;
+}
+.botonxd{
+  margin: 0 3% 0 0;
 }
 .cont-porta{
   margin-top: 3%
@@ -554,6 +555,11 @@ background: linear-gradient(180deg, rgba(32,40,77,1) 0%, rgba(119,143,174,1) 100
   justify-content: center;
 
 }
+.logo-sock{
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
 .sock{
  font-size: 8rem;
  color: #7f318a;
@@ -566,10 +572,46 @@ background: linear-gradient(180deg, rgba(32,40,77,1) 0%, rgba(119,143,174,1) 100
 
 .para-sock{
   margin-top: 5%  ;
-  background: url(../images/sock.png);
+  background: url(../images/mediaspro.jpg);
+  background-color: #e7ad00;
   width: 100%;
   height: 30vh;
   background-position: bottom center;
   background-size: cover;
   background-attachment: fixed;
+}
+.descri-spck-text{
+  text-align: justify;
+  margin: 5% 20% 0 20%;
+  color: gray;
+  font-size: 1.3rem;
+}
+.fotos3{
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+.caja-foto1{
+  height: 50vh;
+  width: 20vh;
+  background-image: url(../images/foto-sock1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.caja-foto2{
+  height: 50vh;
+  width: 20vh;
+  background-image: url(../images/foto-sock2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.caja-foto3{
+  height: 50vh;
+  width: 20vh;
+  background-image: url(../images/foto-sock3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
