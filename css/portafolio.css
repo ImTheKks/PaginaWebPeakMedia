@@ -590,14 +590,16 @@ body.nav-active .nav__list-item:nth-child(4) {
   margin-top: 5%;
   display: flex;
   justify-content: center;
+  
 }
 .caja-foto1{
   height: 50vh;
   width: 20vh;
   background-image: url(../images/foto-sock1.jpg);
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  
+  background-position:center;
+  background-attachment: fixed;
 }
 .caja-foto2{
   height: 50vh;
@@ -606,6 +608,9 @@ body.nav-active .nav__list-item:nth-child(4) {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .caja-foto3{
   height: 50vh;
@@ -614,4 +619,8 @@ body.nav-active .nav__list-item:nth-child(4) {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  background-attachment: fixed;
+  
 }
