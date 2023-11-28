@@ -834,11 +834,11 @@ align-items: center;
 }
 
 .card-inte {
-  margin-left: 10%;
+  margin-left: 4%;
   display: flex;
   justify-content: center;
   position: relative;
-  width: 80%;
+  width: 100%;
   transition: all .3s ease;
 }
 
