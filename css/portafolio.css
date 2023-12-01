@@ -255,6 +255,8 @@ ul li:hover ~ .cursor {
 
 .navbar {
   position: fixed;
+  z-index: 10000000;
+  
 }
 
 .brand-icon {
@@ -262,7 +264,7 @@ ul li:hover ~ .cursor {
   height: 30px;
   width: 30px;
   position: fixed;
-  z-index: 1002;
+  z-index: 1000000;
   top: 20px;
   color: #778FAE;
   font-family: "Sintony", sans-serif;
@@ -281,6 +283,7 @@ ul li:hover ~ .cursor {
   cursor: pointer;
 }
 .menu-icon__line {
+  z-index: 10000000;
   height: 2px;
   width: 30px;
   display: block;
@@ -599,7 +602,7 @@ body.nav-active .nav__list-item:nth-child(4) {
   background-size: cover;
   
   background-position:center;
-  background-attachment: fixed;
+  background-attachment: ;
 }
 .caja-foto2{
   height: 50vh;
@@ -610,7 +613,7 @@ body.nav-active .nav__list-item:nth-child(4) {
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: ;
 }
 .caja-foto3{
   height: 50vh;
@@ -621,6 +624,59 @@ body.nav-active .nav__list-item:nth-child(4) {
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: ;
   
 }
+
+
+.titu-solo{
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(../images/solovine-frame.PNG);
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titu-solo-h1{
+  font-size: 5rem;
+  font-family: yorkieRegular;
+  color: white;
+}
+.descri-solo{
+ 
+}
+.descri-solo-text{
+  font-size: 1.3rem;
+  color: gray;
+  text-align: justify;
+  margin: 5% 20% 0 20%;
+}
+.video-solo{
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+.titu-feliz{
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(../images/feliz-cum.PNG);
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+

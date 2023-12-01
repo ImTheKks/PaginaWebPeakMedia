@@ -77,7 +77,7 @@ body::-webkit-scrollbar-thumb{
 
 
 .cursor {
-  z-index: 10001;
+  z-index: 1000000000;
   position: relative;
   width: 30px;
   height: 30px;
@@ -89,7 +89,7 @@ body::-webkit-scrollbar-thumb{
   mix-blend-mode: difference;
 }
 
-ul li:hover ~ .cursor {
+ul li:hover .cursor {
   transform: scale(6);
 }
 
@@ -163,7 +163,7 @@ ul li:hover ~ .cursor {
   /*menú abierto*/
   input:checked ~ label .menu {
     box-shadow: 0 0 0 1vw #20284d, 0 0 0 92vh #20284d, 0 0 0 130vh white;
-    background-image: url(/images/logofo.png);
+    
   }
   input:checked ~ label .hamburger {
     transform: rotate(45deg);
@@ -266,6 +266,7 @@ ul li:hover ~ .cursor {
 
 .navbar {
   position: fixed;
+  z-index: 1000000;
 }
 
 .brand-icon {
@@ -275,22 +276,32 @@ ul li:hover ~ .cursor {
   position: fixed;
   z-index: 1002;
   top: 20px;
-  color: #778FAE;
+  color: red;
   font-family: "Sintony", sans-serif;
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 1.3px;
 }
 
+
+
 .menu-icon {
-  height: 30px;
-  width: 30px;
+  display: flex;
+  align-items: center;
+
+  mix-blend-mode: difference;
+  height: 5%;
+  width: 2.3%;
   position: fixed;
-  z-index: 2000;
+  z-index: 100000;
   right: 50px;
-  top: 25px;
+  top: 30px;
   cursor: pointer;
 }
+.cont-linea{
+
+}
+
 .menu-icon__line {
   height: 2px;
   width: 30px;
@@ -752,6 +763,9 @@ section img{
   justify-content: center;
 }
 
+.integrantes{
+ 
+}
 
 .caja-titu-integrantes{
 display: flex;
@@ -780,6 +794,9 @@ align-items: center;
 .fotos {
   margin-top: 5%;
 }
+
+
+
 .footer {
   
   background-color: #20284d;
@@ -826,6 +843,16 @@ align-items: center;
 
 
 /* Cards integrantes */
+
+.descri-inte{
+  margin-bottom: 5%;
+}
+.descri-inte-text{
+  text-align: justify;
+  color: gray;
+  font-size: 1.6rem;
+  padding: 0 10% 0 10%;
+}
 
 .carta-int{
 
@@ -946,9 +973,7 @@ align-items: center;
   
 }
 .video-somos{
-  background-image: url(../images/montaña_3.png);
-  background-size: cover;
-  background-color:;
+ 
   display: flex;
   justify-content: center;
 }
