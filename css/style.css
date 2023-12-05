@@ -4,7 +4,11 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 body {
+  scroll-behavior: smooth;
   background-color: white;
   overflow-x: hidden;  
   cursor: none; 
@@ -788,6 +792,11 @@ align-items: center;
 .carta-int{
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+.link-porta{
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -960,7 +969,7 @@ align-items: center;
 .descri-spot{
   font-size: 1.6rem;
   color: gray;
-  padding: 3% 15% 3% 15%;
+  padding: 5% 10% 0 10%;
   text-align: justify;
 }
 
@@ -990,6 +999,13 @@ align-items: center;
   background-attachment: fixed;
 }
 
+
+.inte-descri-text{
+  text-align: justify;
+  color: gray;
+  font-size: 1.6rem;
+  padding: 0 10% 0 10%;
+}
 
 
 

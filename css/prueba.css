@@ -5,6 +5,22 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+
+@font-face {
+  font-family: yorkieRegular;
+  src: url(/fonts/YorkieDEMO-Regular.otf);
+}
+@font-face {
+  font-family: yorkieLight;
+  src: url(/fonts/YorkieDEMO-Light.otf);
+}
+@font-face {
+  font-family: coinage;
+  src: url(/fonts/CoinageCapsKrugerGray.ttf);
+}
+
+
 #contenedor_carga{
   background-color:  #20284d;
 
@@ -49,4 +65,320 @@
 .card:hover{
   flex: 2;
   background-color: rgb(207, 207, 207);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	
+	font-size: 15px;
+	background: #ccc;
+	color: #fff;
+	overflow: hidden;
+}
+.containerxd{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.containerxd > .selec,
+.containerxd > span{
+	position: fixed;
+	bottom: 0;
+	width: 20%;
+	height: 34px;
+	line-height: 34px;
+	cursor: pointer;
+}
+
+/* NAVEGACIÓN + SCROLL */
+#radio-nav-1, #radio-nav-1 + span{left: 0;}
+#radio-nav-2, #radio-nav-2 + span{left: 20%;}
+#radio-nav-3, #radio-nav-3 + span{left: 40%;}
+#radio-nav-4, #radio-nav-4 + span{left: 60%;}
+#radio-nav-5, #radio-nav-5 + span{left: 80%;}
+
+#radio-nav-1:checked ~ .scroll{
+	transform: translateY(0%);
+	-webkit-transform: translateY(0%);
+}
+#radio-nav-2:checked ~ .scroll{
+	transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+}
+#radio-nav-3:checked ~ .scroll{
+	transform: translateY(-200%);
+	-webkit-transform: translateY(-200%);
+}
+#radio-nav-4:checked ~ .scroll{
+	transform: translateY(-300%);
+	-webkit-transform: translateY(-300%);
+}
+#radio-nav-5:checked ~ .scroll{
+	transform: translateY(-400%);
+	-webkit-transform: translateY(-400%);
+}
+
+.containerxd > span{
+	background: #eee;
+	font-size: 14px;
+	font-weight: bold;
+	color:#20284d;
+	text-align: center;
+	z-index: 10;
+}
+.containerxd > .selec{
+	z-index: 15;
+	opacity: 0;
+}
+.containerxd > .selec:checked + span,
+.containerxd > .selec:checked:hover + span{
+	background: #20284d;
+	color: #fff;
+}
+
+.containerxd > .selec:checked + span::after,
+.containerxd > .selec:checked:hover + span::after{
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	bottom: 100%;
+	border: solid transparent;
+	border-bottom-color:#20284d;
+	border-width: 15px;
+	left: 50%;
+	margin-left: -15px;
+}
+
+.containerxd > .selec:hover + span{
+	background: #778FAE;
+	color: #fff;
+}
+
+#section-1{background: #e3aa00;}
+#section-2{background: rgb(148, 115, 14);}
+#section-3{background: #fff;}
+#section-4{background: #111111;}
+#section-5{background: rgb(61, 209, 61);}
+
+.scroll,
+.section{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	transition: all .6s ease-in-out;
+}
+.section{overflow: hidden;}
+
+.logo{
+	position: relative;
+	margin: 0 auto;
+	width: 120px;
+	height: 120px;
+	background: #eee;
+	transform: translateY(-50%) rotate(45deg);
+	-webkit-transform: translateY(-50%) rotate(45deg);
+}
+.logo span{
+	font-size: 20px;
+	position: absolute;
+	top: 90px;
+	left: 60px;
+	color: #20284d;
+}
+
+.section h2{
+  margin-top: ;
+	width: 100%;
+	font-size: 3rem;
+	text-align: center;
+	
+	top: 50%;
+}
+
+.section p{
+	position: ;
+	text-align: center;
+	top: 50%;
+	left: 25%;
+	margin-top: 3%;
+}
+
+/* Animações */
+#radio-nav-1:checked ~ .scroll #section-1 .sock,
+#radio-nav-2:checked ~ .scroll #section-2 h2,
+#radio-nav-3:checked ~ .scroll #section-3 h2,
+#radio-nav-4:checked ~ .scroll #section-4 h2,
+#radio-nav-5:checked ~ .scroll #section-5 h2{
+	animation: animeDown .7s ease-in-out .4s backwards;
+	-webkit-animation: animeDown .7s ease-in-out .4s backwards;
+}
+
+#radio-nav-1:checked ~ .scroll #section-1 p,
+#radio-nav-2:checked ~ .scroll #section-2 p,
+#radio-nav-3:checked ~ .scroll #section-3 p,
+#radio-nav-4:checked ~ .scroll #section-4 p,
+#radio-nav-5:checked ~ .scroll #section-5 p{
+	animation: animeUp .7s ease-in-out .4s backwards;
+	-webkit-animation: animeUp .7s ease-in-out .4s backwards;
+}
+#radio-nav-1:checked ~ .scroll #section-1 .fotos3,
+#radio-nav-2:checked ~ .scroll #section-2 .fotos3,
+#radio-nav-3:checked ~ .scroll #section-3 .fotos3,
+#radio-nav-4:checked ~ .scroll #section-4 .fotos3,
+#radio-nav-5:checked ~ .scroll #section-5 .fotos3{
+	animation: animeUp .7s ease-in-out .4s backwards;
+	-webkit-animation: animeUp .7s ease-in-out .4s backwards;
+}
+#radio-nav-1:checked ~ .scroll #section-1 .video-solo,
+#radio-nav-2:checked ~ .scroll #section-2 .video-solo,
+#radio-nav-3:checked ~ .scroll #section-3 .video-solo,
+#radio-nav-4:checked ~ .scroll #section-4 .video-solo,
+#radio-nav-5:checked ~ .scroll #section-5 .video-solo{
+	animation: animeUp .7s ease-in-out .4s backwards;
+	-webkit-animation: animeUp .7s ease-in-out .4s backwards;
+}
+
+.paño{
+  font-family: yorkieRegular;
+}
+.sock{
+  color: #7f318a;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.caja-titu{
+
+}
+.descri-inter{
+  color: white;
+  font-size: 1.1rem;
+  padding: 0 10% 0 10%;
+}
+.fotos3{
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  
+}
+.caja-foto11{
+  height: 40vh;
+  width: 20vh;
+  background-image: url(../images/logo-rojo.jpg);
+  background-size: cover;
+  
+  background-position:center;
+  background-attachment: ;
+}
+.caja-foto1{
+  height: 40vh;
+  width: 20vh;
+  background-image: url(../images/redes-sock.jpeg);
+  background-size: cover;
+  
+  background-position:center;
+  background-attachment: ;
+}
+.caja-foto2{
+  height: 40vh;
+  width: 20vh;
+  background-image: url(../images/foto-sock2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  background-attachment: ;
+}
+.caja-foto3{
+  height: 40vh;
+  width: 20vh;
+  background-image: url(../images/sock-poster.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  background-attachment: ;
+  
+}
+.caja-foto33{
+  height: 40vh;
+  width: 20vh;
+  background-image: url(../images/foto-sock1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  background-attachment: ;
+  
+}
+.solo{
+  font-family: yorkieRegular;
+  
+}
+.video-solo{
+  margin-top: 2.5%;
+  display: flex;
+  justify-content: center;
+}
+.queno{
+  color: #20284d;
+  font-family: yorkieRegular;
+}
+.descri-inter-2{
+  color: gray ;
+  font-size: 1.1rem;
+  padding: 0 10% 0 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes animeDown{
+	0%{
+		transform: translateY(-50px);
+		-webkit-transform: translateY(-50px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+@keyframes animeUp{
+	0%{
+		transform: translateY(50px);
+		-webkit-transform: translateY(50px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+		opacity: 1;
+	}
 }
