@@ -661,7 +661,7 @@ body.nav-active .nav__list-item:nth-child(4) {
   margin-left: 22%;
 }
 .descri {
-  color: #20284d;
+  color: gray;
   font-size: 1.2rem;
   margin: 5% 0% 0 10%;
 }
@@ -670,7 +670,14 @@ body.nav-active .nav__list-item:nth-child(4) {
   margin-left: 3%;
 }
 .img1 {
-  background-color: #20284d;
+  background-image: url(../images/audiovisual2.gif);
+  height: 200px;
+  width: 600px;
+  margin-bottom: 5%;
+}
+.img2 {
+  background-image: url(../images/audiovisual1.gif);
+  background-size: cover;
   height: 200px;
   width: 600px;
   margin-bottom: 5%;

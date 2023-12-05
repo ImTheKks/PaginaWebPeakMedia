@@ -666,12 +666,14 @@ body.nav-active .nav__list-item:nth-child(4) {
   margin-top: -3%;
 }
 .img1 {
-  background-color: white;
+  background-image: url(../images/web1.jpg);
+ background-size: cover;
   height: 250px;
   width: 450px;
 }
 .img2 {
-  background-color: white;
+  background-size: cover;
+  background-image: url(../images/web2.jpeg);
   height: 250px;
   width: 450px;
   margin-left: 20%;
