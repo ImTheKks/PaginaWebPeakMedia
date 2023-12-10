@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/portafolio.css" />
-    <title>PeakMedia</title>
+    <link rel="icon" href="images/logo-sin-text.webp">
+    <title>Portafolio</title>
   </head>
   <body>
 
@@ -27,7 +28,8 @@
       <li>
         <a href="portafolio.html">Portafolio</a>
       </li>
-      <li><a href="nosotros.html">Quienes somos</a></li>
+      <li><a href="https://www.peakmedia.com.co/blog/">Blog</a></li>
+
       <li><a href="contacto.html">Contacto</a></li>
     </ul>
   </nav>
@@ -53,9 +55,10 @@
             <ul class="nav__list">
               
                 <li class="nav__list-item"><a href="index.html" class="link_menu">Inicio</a></li>
-                <li class="nav__list-item"><a href="#quienes_somos" class="link_menu">Quienes somos</a></li>
+                <li class="nav__list-item"><a href="quienes.html" class="link_menu">Quienes somos</a></li>
                 <li class="nav__list-item"><a href="portafolio.html" class="link_menu">Portafolio</a></li>
                 <li class="nav__list-item"><a href="servicios.html" class="link_menu">Servicios</a></li>
+                <li class="nav__list-item"><a href="https://www.peakmedia.com.co/blog/" class="link_menu">Blog</a></li>
                 <li class="nav__list-item"><a href="contacto.html" class="link_menu">Contacto</a></li>
             </ul>
         </div>
@@ -85,6 +88,14 @@
         <div class="col-xs-10 -col-md-10 col-lg-10 linea"></div>
       </header>
 
+      <div class="caja-alerta">
+        <div class="alert alert-success" role="alert">
+          <h4 class="alert-heading">Well done!</h4>
+          <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+          <hr>
+          <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+        </div>
+      </div>
 
       <div class="containerxd">
         <!-- Menu -->
@@ -102,7 +113,7 @@
         <!-- Scroll -->
         <div class="scroll">
           <section class="section" id="section-1">
-            <div class="logo">
+            <div class="logo1">
               <span class="paño">PEAK</span>
             </div>
             <div class="col-xs-12 col-md-12 col-lg-12 caja-titu">
@@ -113,65 +124,105 @@
                 SOCK-ETES es un emprendimiento de ventas de calcetines con diseños únicos y diferentes, este emprendimiento acudió a PEAKMEDIA en busca de ayuda. Al cliente como solución se le realizó una página web, manejo de redes sociales (Instagram) y piezas publicitarias.
               
                 <div class="row fotos3">
-                  <div class="col-xs-12 col-md-1 col-3 caja-foto11"></div>
-                  <div class="col-xs-12 col-md-1 col-1 caja-fotor"></div>
-                  <div class="col-xs-12 col-md-1 col-3 caja-foto1"></div>
-                  <div class="col-xs-12 col-md-1 col-1 caja-fotor"></div>
-                  <div class="col-xs-12 col-md-1 col-3 caja-foto2"></div>
-                  <div class="col-xs-12 col-md-1 col-1 caja-fotor"></div>
-                  <div class="col-xs-12 col-md-1 col-3 caja-foto3"></div>
-                  <div class="col-xs-12 col-md-1 col-1 caja-fotor"></div>
-                  <div class="col-xs-12 col-md-1 col-3 caja-foto33"></div>
-                </div>
+                  <div id="carouselExampleDark"  class="carousel carousel-dark slide slider-fotos">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/foto-slider4.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 style="font-size: 1.3rem;">Piezas gráficas</h5>
+                          <p style=" font-size: 1.5rem;">En el trabajo que se realizo para Sock-Etes, se cincluyen piezas gráficas, somo lo son posters.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/foto-slider2.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 style="color: white;">Foto Producto</h5>
+                          <p style="color: white; font-size: 1.5rem;">Se le realizo una seción fotografia resaltando lo mjeor del producto.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/foto-slider3.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 style="font-size: 2rem; font-weight: bold; color: #7f318a;">SOCK-ETES</h5>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
               </div>
           </section>
       
           <section class="section" id="section-2">
-            <div class="logo">
+            <div class="logo2">
               <span class="paño">PEAK</span>
             </div>
-            <h2 class="solo">SOLO VINE A PREGUNTAR</h2>
+            <h2 class="solo2">SOLO VINE A PREGUNTAR</h2>
             <p class="descri-inter">
                "SOLO VINE A PREGUNTAR" es una pequeña adaptación de una escena de una historia escrita por Gabriel García Márquez (Solo vine a hablar por teléfono).
             </p>
             <div class="video-solo">
-              <iframe width="530" height="285" src="https://www.youtube.com/embed/82OAqhdxypc?si=RVXy16V1ECBJF9eG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/OacIT4yoQVA?si=divraJhIaB8uk-cv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
+            <p class="descri-inter">
+              Encuentra más contenido (giones, storyboards, etc...) al respecto en uestro <a href="https://www.peakmedia.com.co/blog/descargables/" target="_blank" style="color: #20284d;">Blog oficial</a> 
+            </p>
           </section>
       
           <section class="section" id="section-3">
-            <div class="logo">
+            <div class="logo3">
               <span class="paño">PEAK</span>
             </div>
-            <h2 class="queno">QUE NO TE PASE</h2>
-            <p class="descri-inter-2">
-              "QUE NO TE PASE", es un pequeño corto/comercial que busca relatar lo que puede llegar a pasar en caso de no acudir a profesionales. No seas como "Carlos" y acude a PEAKMEDIA. -EL PERRO DE JUAN NO HA SUBIDO EL SPOT D:-
+            <h2 class="queno2">QUE NO TE PASE</h2>
+            <p class="descri-inter">
+              "QUE NO TE PASE", es un pequeño corto/comercial que busca relatar lo que puede llegar a pasar en caso de no acudir a profesionales. No seas como "Carlos" y acude a PEAKMEDIA.
             </p>
             <div class="video-solo">
-              <iframe width="530" height="285" src="https://www.youtube.com/embed/ekMsV_QvPtg?si=RauZp8AMbX5Im9Vg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/lKYWMGVp8uo?si=TP_k0LEn0LPh8OH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
+            <p class="descri-inter">
+              Encuentra más contenido (giones, storyboards, etc...) al respecto en uestro <a href="https://www.peakmedia.com.co/blog/descargables/" target="_blank" style="color: #20284d;">Blog oficial</a> 
+            </p>
           </section>
       
           <section class="section" id="section-4">
-            <div class="logo">
+            <div class="logo4">
               <span class="paño">PEAK</span>
             </div>
-            <h2 class="solo">NO TE DEJES MORIR</h2>
+            <h2 class="solo3">NO TE DEJES MORIR</h2>
             <p class="descri-inter">
-              "NO TE DEJES MORIR" es un corto que busca concientizar sobre una buena alimentación, aparte de este, también busca fomentar la tenencia de huertas urbanas en la ciudad de Bogotá. -ESTE SI ESTÁ EN EDICIÓN, DÉJENLO COCINA, PERO DE MOMENTO GÓCENSE ESTE TEMAZO-
+              "NO TE DEJES MORIR" es un corto que busca concientizar sobre una buena alimentación, aparte de este, también busca fomentar la tenencia de huertas urbanas en la ciudad de Bogotá.
             </p>
             <div class="video-solo">
               <iframe width="530" height="285" src="https://www.youtube.com/embed/MMtRxcy8PX0?si=_3mQmNFFtAKXC085" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
+            <p class="descri-inter">
+              Encuentra más contenido (giones, storyboards, etc...) al respecto en uestro <a href="https://www.peakmedia.com.co/blog/descargables/" target="_blank" style="color: #20284d;">Blog oficial</a> 
+            </p>
           </section>
       
           <section class="section" id="section-5">
-            <div class="logo">
+            <div class="logo5">
               <span class="paño">PEAK</span>
             </div>
-            <h2 class="solo">UNA HUERTA A LA VUELTA</h2>
+            <h2 class="solo4">UNA HUERTA A LA VUELTA</h2>
             <p class="descri-inter">
                      "UNA HUERTA A LA VUELTA" Es una solución que nace de la necesidad que tiene el proyecto "Bogotá, mi huerta", en este se busca potenciar el alcance y del proyecto en cuestión, y de ciertas rutas con carácter turístico ubicadas en Bogotá. En este se desarrolló un personaje a la vez que se elaboró un pequeño cortometraje "NO TE DEJES MORIR".
+            </p>
+            <p class="descri-inter">
+              Pronto podras encontrasr más información al respecto. "PACIENCIA VIRTUD DE SABIOS" -Dijo una vez una sabio.</a> 
             </p>
           </section>
         </div>

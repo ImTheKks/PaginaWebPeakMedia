@@ -526,7 +526,7 @@ body.nav-active .nav__list-item:nth-child(4) {
   /*menú abierto*/
   input:checked ~ label .menu {
     box-shadow: 0 0 0 1vw #20284d, 0 0 0 92vh #20284d, 0 0 0 130vh white;
-    background-image: url(/images/logofo.png);
+    background-image: url();
   }
   input:checked ~ label .hamburger {
     transform: rotate(45deg);
@@ -673,7 +673,7 @@ body.nav-active .nav__list-item:nth-child(4) {
 }
 .img2 {
   background-size: cover;
-  background-image: url(../images/web2.jpeg);
+  background-image: url(../images/web2.webp);
   height: 250px;
   width: 450px;
   margin-left: 20%;

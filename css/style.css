@@ -9,7 +9,8 @@ html{
 }
 body {
   scroll-behavior: smooth;
-  background-color: white;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(189,199,219,1) 68%, rgba(189,199,219,1) 100%);
   overflow-x: hidden;  
   cursor: none; 
 
@@ -691,6 +692,7 @@ body.nav-active .nav__list-item:nth-child(4) {
 .bodyall{
 }
 .para{
+
   height: 100vh;
   width: 100%;
 }
@@ -734,6 +736,10 @@ section img{
   margin-top: 5%;
 }
 .titulo {
+  margin-top: 8%;
+}
+.titu-somos{
+
 }
 .linea {
   margin-top: 5%;
@@ -989,8 +995,8 @@ align-items: center;
 
 
 .banner-parallax{
-  margin-top: 4%;
-  background: url(../images/banner.png);
+  margin-top: 5%;
+  background: url(../images/uru-volando.gif);
   width: 100%;
   height: 50vh;
 
@@ -1026,17 +1032,23 @@ align-items: center;
     display: none;
   }
   
+  .para{
+   
+    height: 100vh;
+    width: 100%;
+  }
   .boton-redes{
     display: none;
   }
   .titu1 {
     font-family: yorkieRegular;
     font-size: 3rem;
-    margin-left: 2vh;
+    margin-left: 0.5vh;
     margin-bottom: -2vh;
   }
   .titu2 {
-    margin-left: 1.5vh;
+    background-color: ;
+    margin-left: 1vh;
     margin-bottom: 5vh;
     font-family: yorkieRegular;
     font-size: 4.3rem;
@@ -1060,7 +1072,7 @@ align-items: center;
   }
   .banner-parallax{
     margin-top: 4%;
-    background: url(../images/banner.png);
+    background: url(../images/banner-uru.webp);
     width: 100%;
     height: 20vh;
   
@@ -1069,4 +1081,7 @@ align-items: center;
     background-attachment: fixed;
   }
 }
-    
+   
+
+
+

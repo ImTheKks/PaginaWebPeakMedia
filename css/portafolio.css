@@ -556,11 +556,11 @@ body{
 	color: #fff;
 }
 
-#section-1{background: #e3aa00;}
-#section-2{background: rgb(148, 115, 14);}
-#section-3{background: #fff;}
-#section-4{background: #111111;}
-#section-5{background: rgb(61, 209, 61);}
+#section-1{background: #BDC7DB;}
+#section-2{background: #BDC7DB;}
+#section-3{background: #BDC7DB;}
+#section-4{background: #BDC7DB;}
+#section-5{background: #BDC7DB;}
 
 .scroll,
 .section{
@@ -573,21 +573,85 @@ body{
 }
 .section{overflow: hidden;}
 
-.logo{
+.logo1{
 	position: relative;
 	margin: 0 auto;
 	width: 120px;
 	height: 120px;
-	background: #eee;
+	background: #7f318a;
 	transform: translateY(-50%) rotate(45deg);
 	-webkit-transform: translateY(-50%) rotate(45deg);
 }
-.logo span{
+.logo2{
+	position: relative;
+	margin: 0 auto;
+	width: 120px;
+	height: 120px;
+	background: #79581b;
+	transform: translateY(-50%) rotate(45deg);
+	-webkit-transform: translateY(-50%) rotate(45deg);
+}
+.logo3{
+	position: relative;
+	margin: 0 auto;
+	width: 120px;
+	height: 120px;
+	background: #dd8a0d;
+	transform: translateY(-50%) rotate(45deg);
+	-webkit-transform: translateY(-50%) rotate(45deg);
+}
+.logo4{
+	position: relative;
+	margin: 0 auto;
+	width: 120px;
+	height: 120px;
+	background: #292929;
+	transform: translateY(-50%) rotate(45deg);
+	-webkit-transform: translateY(-50%) rotate(45deg);
+}
+.logo5{
+	position: relative;
+	margin: 0 auto;
+	width: 120px;
+	height: 120px;
+	background: #4aa70d;
+	transform: translateY(-50%) rotate(45deg);
+	-webkit-transform: translateY(-50%) rotate(45deg);
+}
+.logo1 span{
 	font-size: 20px;
 	position: absolute;
 	top: 90px;
 	left: 60px;
-	color: #20284d;
+	color: #BDC7DB;
+}
+.logo2 span{
+	font-size: 20px;
+	position: absolute;
+	top: 90px;
+	left: 60px;
+	color: #BDC7DB;
+}
+.logo3 span{
+	font-size: 20px;
+	position: absolute;
+	top: 90px;
+	left: 60px;
+	color: #BDC7DB;
+}
+.logo4 span{
+	font-size: 20px;
+	position: absolute;
+	top: 90px;
+	left: 60px;
+	color: #BDC7DB;
+}
+.logo5 span{
+	font-size: 20px;
+	position: absolute;
+	top: 90px;
+	left: 60px;
+	color: #BDC7DB;
 }
 
 .section h2{
@@ -653,8 +717,8 @@ body{
 
 }
 .descri-inter{
-  color: white;
-  font-size: 1.1rem;
+  color: rgb(95, 95, 95);
+  font-size: 1.5rem;
   padding: 0 10% 0 10%;
 }
 .fotos3{
@@ -663,65 +727,28 @@ body{
   justify-content: center;
   
 }
-.caja-foto11{
-  height: 40vh;
-  width: 20vh;
-  background-image: url(../images/logo-rojo.jpg);
-  background-size: cover;
-  
-  background-position:center;
-  background-attachment: ;
-}
-.caja-foto1{
-  height: 40vh;
-  width: 20vh;
-  background-image: url(../images/redes-sock.jpeg);
-  background-size: cover;
-  
-  background-position:center;
-  background-attachment: ;
-}
-.caja-foto2{
-  height: 40vh;
-  width: 20vh;
-  background-image: url(../images/foto-sock2.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: cover;
-  background-attachment: ;
-}
-.caja-foto3{
-  height: 40vh;
-  width: 20vh;
-  background-image: url(../images/sock-poster.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: cover;
-  background-attachment: ;
-  
-}
-.caja-foto33{
-  height: 40vh;
-  width: 20vh;
-  background-image: url(../images/foto-sock1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: cover;
-  background-attachment: ;
-  
-}
+
 .solo{
   font-family: yorkieRegular;
   
 }
+.solo2{
+  font-family: yorkieRegular;
+  color: #79581b;
+  
+}
+.solo3{
+  font-family: yorkieRegular;
+  color: #292929;
+  
+}
+.solo4{
+  font-family: yorkieRegular;
+  color: #4aa70d;
+  
+}
 .video-solo{
-  margin-top: 2.5%;
+  margin-top: 5%;
   display: flex;
   justify-content: center;
 }
@@ -729,10 +756,17 @@ body{
   color: #20284d;
   font-family: yorkieRegular;
 }
+.queno2{
+  color: #dd8a0d;
+  font-family: yorkieRegular;
+}
 .descri-inter-2{
-  color: gray ;
+  color: gray;
   font-size: 1.1rem;
   padding: 0 10% 0 10%;
+}
+.slider-fotos{
+  width: 50%;
 }
 
 
@@ -774,5 +808,8 @@ body{
   }
   .caja-titu{
     margin-top: 15%;
+  }
+  .slider-fotos{
+    width: 100%;
   }
 }
